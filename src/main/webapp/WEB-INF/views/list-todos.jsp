@@ -10,5 +10,7 @@
 Hi ${name}! <BR/>
 Your Todos are
 ${todos}
+<BR/>
+<a class="button" href="/add-todo">Add</a>
 </body>
 </html>
