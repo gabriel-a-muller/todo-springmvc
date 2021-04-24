@@ -7,6 +7,7 @@
 <title>Welcome</title>
 </head>
 <body>
+Hi ${name}! <BR/>
 Your Todos are
 ${todos}
 </body>
