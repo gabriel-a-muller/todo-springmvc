@@ -5,7 +5,7 @@
 	<display-name>To do List</display-name>
 
 	<welcome-file-list>
-		<welcome-file>login.do</welcome-file>
+		<welcome-file>/WEB-INF/views/login.jsp</welcome-file>
 	</welcome-file-list>
 	
 	<servlet>
@@ -22,7 +22,7 @@
 	
 	<servlet-mapping>
 		<servlet-name>dispatcher</servlet-name>
-		<url-pattern>/spring-mvc/*</url-pattern>
+		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
 </web-app>
