@@ -29,11 +29,19 @@ public class TodoController {
 		public String addTodoPage() {
 			return "add-todo";
 		}
-		/* @RequestParam Date targetDate*/
+
 		@RequestMapping(value = "/add-todo", method = RequestMethod.POST)
 		public String handleTodoRequest(ModelMap model, @RequestParam String desc) {
 			service.addTodo("Gabriel", desc, new Date(), false);
 			model.clear();
 			return "redirect:list-todos";
 		}
+		
+		@RequestMapping(value = "/delete-todo", method = RequestMethod.GET)
+		public String deleteTodo(ModelMap model, @RequestParam int id) {
+			model.clear();
+			service.deleteTodo(id);
+			return "redirect:list-todos";
+		}
+		
 }
