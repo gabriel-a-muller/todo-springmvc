@@ -14,6 +14,8 @@
 		
 		<fieldset class="form-group">
 
+			<form:hidden path="id"/>
+
 			<form:label path="desc">Description:</form:label>
 			<form:input type="text" path="desc" class="form-control"
 			required="required"/>
@@ -28,7 +30,7 @@
 
 		</fieldset>
 
-			<input class="btn btn-success" type="submit" value="Add"/>
+			<input class="btn btn-success" type="submit" value="Submit"/>
 		</form:form>
 	</div>
 	<script src="webjars/jquery/1.9.1/jquery.min.js"></script>

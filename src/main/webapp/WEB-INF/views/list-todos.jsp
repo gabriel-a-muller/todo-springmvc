@@ -8,7 +8,7 @@
 <body>
 	<div class="container">
 		<table class="table table-striped">
-			<caption>Your Todos are:</caption>
+			<caption>${name} Your Todos are:</caption>
 			<thead>
 				<tr>
 					<th>Description</th>
@@ -26,6 +26,8 @@
 					<td>${todo.targetDate}</td>
 					<td>${todo.done}</td>
 					<td>
+						<a class="btn btn-info" 
+						href="/update-todo?id=${todo.id}">Update</a>
 						<a class="btn btn-danger" 
 						href="/delete-todo?id=${todo.id}">Delete</a>
 					</td>
