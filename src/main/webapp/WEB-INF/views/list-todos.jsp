@@ -23,7 +23,7 @@
 				</td>
 				<td>${todo.done}</td>
 				<td>
-					<a class="btn btn-success" 
+					<a class="btn btn-success"
 					href="/update-todo?id=${todo.id}">Update</a>
 					<a class="btn btn-danger" 
 					href="/delete-todo?id=${todo.id}">Delete</a>
