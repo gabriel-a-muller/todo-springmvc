@@ -9,5 +9,8 @@
 			<li class="${page.endsWith('/list-todos') ? 'active' : ''}">
 			<a href="/list-todos">ToDos</a></li>
 		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="/logout">Logout</a></li>
+		</ul>
 	</div>
 </nav>
