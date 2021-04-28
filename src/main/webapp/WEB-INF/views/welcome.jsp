@@ -1,17 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Welcome</title>
-</head>
-<body>
-Welcome ${name}. <BR/>
-
-Now you can <a href="/list-todos">manage your todos</a>
-</body>
-</html>
-
-<!--  Valid User -> welcome.jsp -->
-<!--  Invalid User -> login.jsp -->
+<%@ include file="common/header.jspf" %>
+<%@ include file="common/navigation.jspf" %>
+<div class="container">
+	Welcome ${name}. <BR/>
+	
+	Now you can <a href="/list-todos">manage your todos</a>
+</div>
+<%@ include file="common/footer.jspf" %>
