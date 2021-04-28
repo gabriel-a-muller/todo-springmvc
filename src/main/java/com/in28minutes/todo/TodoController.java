@@ -62,7 +62,7 @@ public class TodoController {
 			if(result.hasErrors()) {
 				return "add-todo";
 			}
-			service.addTodo(retrieveLoggedInUser(), todo.getDesc(), new Date(), false);
+			service.addTodo(retrieveLoggedInUser(), todo.getDesc(), todo.getTargetDate(), todo.isDone());
 			model.clear();
 			return "redirect:list-todos";
 		}
