@@ -19,7 +19,12 @@
 		required="required"/>
 		<form:errors path="targetDate" cssClass="text-warning"/>
 		<BR/>
-
+		
+		<form:label path="done">Status:</form:label>
+		<form:checkbox path="done"/>
+		<form:errors path="targetDate" cssClass="text-warning"/>
+		<BR/>
+		
 	</fieldset>
 
 		<input class="btn btn-success" type="submit" value="Submit"/>
